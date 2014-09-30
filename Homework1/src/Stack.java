@@ -5,7 +5,6 @@ import java.util.List;
  * Created by Ilya on 30.09.2014.
  */
 public class Stack<T> {
-    private T object;
     private int size;
     private List <T> stack;
 
