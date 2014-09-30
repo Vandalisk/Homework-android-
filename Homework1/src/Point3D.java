@@ -3,7 +3,6 @@
  */
 public class Point3D extends Point {
     private int z;
-    private int n;
 
     public Point3D() {
 
