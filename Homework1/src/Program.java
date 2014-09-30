@@ -3,13 +3,14 @@
  */
 public class Program {
         public static void main(String[] args){
-            Stack stack = new Stack();
-            stack.push(2);
-            stack.push(5);
-            stack.push(7);
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-            System.out.println( stack.pop());
+            Button b = new Button();
+            b.setL(new OnClickListener() {
+                @Override
+                public void onClick() {
+                    // анонимный класс
+                }
+            });
+            b.onClick();
         }
     }
 /*Point p1 = new Point(2,0);
@@ -23,4 +24,14 @@ public class Program {
             System.out.println(result);
             System.out.println(p1.oneLine(p2, p3));
             System.out.println(p1d.oneLine(p2d,  p3d));
-            System.out.println(p1d.distance(p2d));*/
+            System.out.println(p1d.distance(p2d));
+            Stack stack = new Stack();
+            stack.push(2);
+            stack.push(5);
+            stack.push(7);
+            System.out.println(stack.pop());
+            System.out.println(stack.pop());
+            System.out.println( stack.pop());
+
+
+            */
