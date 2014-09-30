@@ -29,9 +29,5 @@ public class Program {
             stack.push(2);
             stack.push(5);
             stack.push(7);
-            System.out.println(stack.pop());
-            System.out.println(stack.pop());
-            System.out.println( stack.pop());
-
 
             */

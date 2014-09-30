@@ -1,29 +1,17 @@
 /**
  * Created by Ilya on 30.09.2014.
  */
-public class Button implements OnClickListener{
-    private int left;
-    private int right;
-    private int top;
-    private int bottom;
-    private String text;
-    private OnClickListener listener;
+public class Button extends View implements OnClickListener{
 
+    private OnClickListener listener;
     public Button(){
 
     }
 
-    public Button(int left, int right, int top, int bottom, String text){
-        this.setLeft(left);
-        this.setRight(right);
-        this.setTop(top);
-        this.setBottom(bottom);
-        this.setText(text);
+    public Button(int left, int right, int top, int bottom, StringBuilder text){
+        super(left, right, top, bottom, text);
     }
 
-    public Button(String text){
-        this.setText(text);
-    }
     public void setL(OnClickListener listener){
         this.listener = listener;
     }
@@ -35,43 +23,5 @@ public class Button implements OnClickListener{
         }
     }
 
-    public int getLeft() {
-        return left;
-    }
 
-    public int getRight() {
-        return right;
-    }
-
-    public int getTop() {
-        return top;
-    }
-
-    public int getBottom() {
-        return bottom;
-    }
-
-    public void setLeft(int left) {
-        this.left = left;
-    }
-
-    public void setRight(int right) {
-        this.right = right;
-    }
-
-    public void setTop(int top) {
-        this.top = top;
-    }
-
-    public void setBottom(int bottom) {
-        this.bottom = bottom;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
 }
