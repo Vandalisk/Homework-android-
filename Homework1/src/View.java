@@ -6,18 +6,17 @@ public class View {
     private int right;
     private int top;
     private int bottom;
-    private StringBuilder text;
 
     public View(){
 
     }
 
-    public View(int left, int right, int top, int bottom, StringBuilder text){
+    public View(int left, int right, int top, int bottom){
         this.setLeft(left);
         this.setRight(right);
         this.setTop(top);
         this.setBottom(bottom);
-        this.setText(text);
+
     }
 
 
@@ -37,9 +36,7 @@ public class View {
         return bottom;
     }
 
-    public StringBuilder getText() {
-        return text;
-    }
+
 
     public void setLeft(int left) {
         this.left = left;
@@ -57,7 +54,4 @@ public class View {
         this.bottom = bottom;
     }
 
-    public void setText(StringBuilder text) {
-        this.text = text;
-    }
 }
